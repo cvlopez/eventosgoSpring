@@ -1,7 +1,9 @@
 package es.taw.eventosgo.entity;
 
+import es.taw.eventosgo.dto.UsuarioEventoDTO;
+
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -107,5 +109,17 @@ public class UsuarioEvento {
 
     public void setUsuarioById(Usuario usuarioById) {
         this.usuarioById = usuarioById;
+    }
+
+    @Transient
+    public UsuarioEventoDTO getDTO(){
+        UsuarioEventoDTO dto = new UsuarioEventoDTO();
+        dto.setId(id);
+        dto.setApellidos(apellidos);
+        dto.setCiudad(ciudad);
+        dto.setDomicilio(domicilio);
+        dto.setFechaNacimiento(fechaNacimiento);
+        dto.setSexo(sexo);
+        return dto;
     }
 }

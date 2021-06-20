@@ -95,13 +95,13 @@
       <%
         if (rol < 0) {
       %>
-      <a class="btn btn-outline-light m-4" href="registroUsuario.jsp" role="button">Registrarse</a>
-      <a class="btn btn-outline-light" href="inicioSesion.jsp" role="button">Iniciar Sesi&oacute;n</a>
+      <a class="btn btn-outline-light m-4" href="usuario/registrar" role="button">Registrarse</a>
+      <a class="btn btn-outline-light" href="/autenticar" role="button">Iniciar Sesi&oacute;n</a>
       <%
       } else {
       %>
       <a class="btn btn-outline-light m-4" href="#" role="button">Perfil</a>
-      <a class="btn btn-outline-light" href="ServletCerrarSesion" role="button">Cerrar Sesi&oacute;n</a>
+      <a class="btn btn-outline-light" href="/cerrarSesion" role="button">Cerrar Sesi&oacute;n</a>
       <%
         }
       %>

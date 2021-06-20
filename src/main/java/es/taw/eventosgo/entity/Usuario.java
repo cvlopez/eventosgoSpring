@@ -20,7 +20,7 @@ public class Usuario {
     private Collection<Mensaje> mensajesById;
     private UsuarioEvento usuarioEventoById;
 
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false)
     public Integer getId() {
         return id;
@@ -141,7 +141,7 @@ public class Usuario {
     public UsuarioDTO getDTO(){
         UsuarioDTO dto = new UsuarioDTO();
         dto.setCorreo(correo);
-        dto.setPassword(contrasena);
+        dto.setContrasena(contrasena);
         dto.setRol(rol);
         return dto;
     }

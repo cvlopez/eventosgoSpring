@@ -1,8 +1,10 @@
 package es.taw.eventosgo.dto;
 
 public class UsuarioDTO {
+    private Integer id;
     private String correo;
-    private String password;
+    private String contrasena;
+    private String nombre;
     private Integer rol;
 
     public String getCorreo() {
@@ -13,12 +15,28 @@ public class UsuarioDTO {
         this.correo = correo;
     }
 
-    public String getPassword() {
-        return password;
+    public Integer getId() {
+        return id;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public Integer getRol() {

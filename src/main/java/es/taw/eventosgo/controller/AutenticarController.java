@@ -52,4 +52,10 @@ public class AutenticarController {
 
         return strTo;
     }
+
+    @GetMapping ("/cerrarSesion")
+    public String doCerrarSesion(HttpSession sesion){
+        sesion.invalidate();
+        return "redirect:/";
+    }
 }
