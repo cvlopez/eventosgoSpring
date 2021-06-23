@@ -1,14 +1,21 @@
 package es.taw.eventosgo.dto;
 
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.Date;
+import java.util.List;
 
 public class UsuarioEventoDTO {
-    private Integer id;
     private String apellidos;
     private String domicilio;
     private String ciudad;
     private Date fechaNacimiento;
-    private Integer sexo;
+    private int sexo;
+    private Integer id;
+    private List<EntradaDTO> entradaList;
+    private UsuarioDTO usuario;
+
+    public UsuarioEventoDTO() {
+    }
 
     public Integer getId() {
         return id;
@@ -16,6 +23,32 @@ public class UsuarioEventoDTO {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    @XmlTransient
+    public List<EntradaDTO> getEntradaList() {
+        return entradaList;
+    }
+
+    public void setEntradaList(List<EntradaDTO> entradaList) {
+        this.entradaList = entradaList;
+    }
+
+    public UsuarioDTO getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(UsuarioDTO usuario) {
+        this.usuario = usuario;
     }
 
     public String getApellidos() {
@@ -42,19 +75,11 @@ public class UsuarioEventoDTO {
         this.ciudad = ciudad;
     }
 
-    public Date getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public Integer getSexo() {
+    public int getSexo() {
         return sexo;
     }
 
-    public void setSexo(Integer sexo) {
+    public void setSexo(int sexo) {
         this.sexo = sexo;
     }
 }

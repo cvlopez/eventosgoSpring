@@ -1,5 +1,8 @@
 package es.taw.eventosgo.entity;
 
+import es.taw.eventosgo.dto.ConversacionDTO;
+import es.taw.eventosgo.dto.EntradaDTO;
+
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -60,5 +63,14 @@ public class Entrada {
 
     public void setEntradaAforoById(EntradaAforo entradaAforoById) {
         this.entradaAforoById = entradaAforoById;
+    }
+
+    @Transient
+    public EntradaDTO getDTO(){
+        EntradaDTO dto = new EntradaDTO();
+        dto.setId(this.id);
+
+
+        return dto;
     }
 }
