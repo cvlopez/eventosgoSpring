@@ -141,7 +141,7 @@ public class Usuario {
     public UsuarioDTO getDTO(){
         UsuarioDTO dto = new UsuarioDTO();
         dto.setCorreo(correo);
-        dto.setPassword(contrasena);
+        dto.setContrasena(contrasena);
         dto.setRol(rol);
         return dto;
     }

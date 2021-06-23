@@ -1,5 +1,7 @@
 package es.taw.eventosgo.entity;
 
+import es.taw.eventosgo.dto.ConversacionDTO;
+
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
@@ -72,5 +74,14 @@ public class Conversacion {
 
     public void setMensajesById(Collection<Mensaje> mensajesById) {
         this.mensajesById = mensajesById;
+    }
+
+    @Transient
+    public ConversacionDTO getDTO(){
+        ConversacionDTO dto = new ConversacionDTO();
+        dto.setId(this.id);
+        dto.setAsunto(this.asunto);
+
+        return dto;
     }
 }
