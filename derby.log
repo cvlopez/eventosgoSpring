@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Fri Jun 18 23:26:38 CEST 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-2104-c4b5-000000679958 
-on database directory E:\UMA\3Ano\2Cuatri\Tecnología de Aplicaciones Web\WorkspaceIntelliJ\eventosgo\eventosgo with class loader sun.misc.Launcher$AppClassLoader@b4aac2 
-Loaded from file:/C:/Users/Usuario/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+Wed Jun 23 12:45:39 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-3879-b9ad-000001c65d80 
+on database directory C:\Users\Kiko BM\Desktop\TAW\intelliJProjects\eventosgoSpring\eventosgo with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3764951d 
+Loaded from file:/C:/Users/Kiko%20BM/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_281-b09
-user.dir=E:\UMA\3Ano\2Cuatri\Tecnología de Aplicaciones Web\WorkspaceIntelliJ\eventosgo
+java.runtime.version=15.0.1+9-18
+user.dir=C:\Users\Kiko BM\Desktop\TAW\intelliJProjects\eventosgoSpring
 os.name=Windows 10
-os.arch=x86
+os.arch=amd64
 os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
